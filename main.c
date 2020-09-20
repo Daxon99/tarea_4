@@ -44,6 +44,7 @@ int main()
         printf("2) Mostrar cadena n veces\n");
         printf("3) Agrear Personaje\n");
         printf("4) Mostrar Personajes\n");
+
         printf("0) Salir\n");
         scanf("%c", &op);
         switch (op)
@@ -59,11 +60,15 @@ int main()
         scanf("%i", &n);
         mostrar(n, cadena);
         break;
+
     case '3':
         capturar_personajes();
         break;
+
     case '4':
         mostrar_personajes();
+        break;
+
     default:
         break;
         }
